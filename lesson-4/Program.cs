@@ -10,6 +10,38 @@ namespace lesson_4
     {
         static void Main(string[] args)
         {
+            #region טיפ מערך
+
+            //// דרך מהירה לכתוב הצבת ערך ל-10 איברים במערך
+
+            //int[] myArr = new int[10];
+            //int counter = 0;
+            //myArr[counter++] = int.Parse(Console.ReadLine());
+            //myArr[counter++] = int.Parse(Console.ReadLine());
+            //myArr[counter++] = int.Parse(Console.ReadLine());
+            //myArr[counter++] = int.Parse(Console.ReadLine());
+            //myArr[counter++] = int.Parse(Console.ReadLine());
+            //myArr[counter++] = int.Parse(Console.ReadLine());
+            //myArr[counter++] = int.Parse(Console.ReadLine());
+            //myArr[counter++] = int.Parse(Console.ReadLine());
+            //myArr[counter++] = int.Parse(Console.ReadLine());
+            //myArr[counter] = int.Parse(Console.ReadLine());
+
+            //// ולהדפיס אותם מהסוף להתחלה
+
+            //Console.WriteLine(myArr[counter--]);
+            //Console.WriteLine(myArr[counter--]);
+            //Console.WriteLine(myArr[counter--]);
+            //Console.WriteLine(myArr[counter--]);
+            //Console.WriteLine(myArr[counter--]);
+            //Console.WriteLine(myArr[counter--]);
+            //Console.WriteLine(myArr[counter--]);
+            //Console.WriteLine(myArr[counter--]);
+            //Console.WriteLine(myArr[counter--]);
+            //Console.WriteLine(myArr[counter--]);
+
+            #endregion
+
             #region 2-dimension Array
 
 
@@ -62,9 +94,63 @@ namespace lesson_4
             myJadArr[1] = new string[5] { "", "", "", "", "" }; // למערך השני [1] יהיו 5 איברים
             myJadArr[2] = new string[3] { "ran", "dani", "yossi" }; // למערך השלישי [2] יהיו 3 איברים
 
-            Console.WriteLine(myJadArr.Length); // יחזיר לי את מס' האיברים במערך המשונן. במקרה זה 10
+            Console.WriteLine(myJadArr.Length); // יחזיר לי את מס' האיברים במערך המשונן. במקרה זה 10. לא עובד, מחזיר 3.
+                                                // צריך לבדוק איך נכון לכתוב את הפקודה הזו...
 
             #endregion
+
+            #region Sort Arrays
+
+            //int[] arrForSort = { 13, 5, 2, 8, 1 };
+            //Array.Sort(arrForSort); // פונקציה שמסדרת את הערכים במערך מהקטן לגדול. היא פועלת על המערך שביקשתי בסוגריים
+            //// ומשנה ממש את סדר הערכים בתוכו
+
+            //for (int i = 0; i < arrForSort.Length; i++)
+            //{
+            //    Console.WriteLine(arrForSort[i]);
+            //}
+
+            ////string  A-Z
+            //string[] myStrForSort = { "Soso", "David", "Avi", "Abigail", "add" };
+            //Array.Sort(myStrForSort); // על סטרינג, הפונקציה ממיינת לפי סדר האותיות הראשונות - abc
+
+            //for (int i = 0; i < myStrForSort.Length; i++)
+            //{
+            //    Console.WriteLine(myStrForSort[i]);
+            //}
+
+
+            #endregion
+
+            #region Rank Property
+
+            //char[,,,] charsDim = new char[5, 2, 3, 4];
+            //Console.WriteLine(charsDim.Rank);// Rank - מחזירה לי כמה מימדים יש במערך מסוים. במקרה זה - 4
+
+            #endregion
+
+            #region IndexOf Method
+
+            //double[] dblArr = { 3.2, 4.5, 7.2, 8 };
+
+            //int index = Array.IndexOf(dblArr, 7.2); // פונקציה שבודקת במערך המבוקש (במקרה הזה dblArr)
+            //// האם יש בתוכו ערך מסוים, במקרה זה 7.2, אם כן היא תחזיר את האינדקס של האיבר במערך שמכיל את הערך המבוקש
+            //// אם לא נמצא הערך, היא תחזיר:
+            //// -1
+
+            //double num = double.Parse(Console.ReadLine());
+            //int index2 = Array.IndexOf(dblArr, num);
+            //if (index2 == -1)
+            //{
+            //    Console.WriteLine("Try Another Number");
+            //}
+            //else
+            //{
+            //    Console.WriteLine(index2);
+            //}
+
+            #endregion
+
         }
     }
 }
