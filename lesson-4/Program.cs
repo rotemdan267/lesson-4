@@ -63,6 +63,7 @@ namespace lesson_4
             myJadArr[2] = new string[3] { "ran", "dani", "yossi" }; // למערך השלישי [2] יהיו 3 איברים
 
             Console.WriteLine(myJadArr.Length); // יחזיר לי את מס' האיברים במערך המשונן. במקרה זה 10
+            Console.WriteLine();
 
             #endregion
         }
