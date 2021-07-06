@@ -10,6 +10,19 @@ namespace lesson_4
     {
         static void Main(string[] args)
         {
+
+            #region String.Join
+
+            char[] myStrArr = new char[7] { 'H', 'A', 'C', 'K', 'E', 'R', 'U' };
+            //......
+
+            //Advance:
+            string allChars = String.Join("$", myStrArr); // String.Join מאחד את המערך של צ'ארס לסטרינג אחד ומוסיף כהפרדה $ במקרה הזה
+            Console.WriteLine(allChars);
+
+            #endregion
+
+
             #region טיפ מערך
 
             //// דרך מהירה לכתוב הצבת ערך ל-10 איברים במערך
@@ -42,7 +55,7 @@ namespace lesson_4
 
             #endregion
 
-            #region 2-dimension Array
+            #region 2-dimension Array, Length, GetLength
 
 
             //// מערך דו מימדי. כמו מערך שמורכב מ-3 מערכים, שלכל אחד מהם 4 איברים
