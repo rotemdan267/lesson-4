@@ -22,7 +22,6 @@ namespace lesson_4
 
             #endregion
 
-
             #region טיפ מערך
 
             //// דרך מהירה לכתוב הצבת ערך ל-10 איברים במערך
