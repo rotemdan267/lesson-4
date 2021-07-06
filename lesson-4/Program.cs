@@ -10,7 +10,6 @@ namespace lesson_4
     {
         static void Main(string[] args)
         {
-
             #region String.Join
 
             char[] myStrArr = new char[7] { 'H', 'A', 'C', 'K', 'E', 'R', 'U' };
@@ -21,6 +20,8 @@ namespace lesson_4
             Console.WriteLine(allChars);
 
             #endregion
+
+
 
             #region טיפ מערך
 
